@@ -643,7 +643,16 @@ diff -ruN HandBrake-0.9.9/win/CS/HandBrake.ApplicationServices/Utilities/PlistUt
              xmlWriter.WriteElementString("integer", audioTrack.Track.ToString());
 diff -ruN HandBrake-0.9.9/win/CS/HandBrake.ApplicationServices/Utilities/QueryGeneratorUtility.cs HandBrake-0.9.9-zh_CN/win/CS/HandBrake.ApplicationServices/Utilities/QueryGeneratorUtility.cs
 --- HandBrake-0.9.9/win/CS/HandBrake.ApplicationServices/Utilities/QueryGeneratorUtility.cs	2012-12-29 22:25:18 +0800
-+++ HandBrake-0.9.9-zh_CN/win/CS/HandBrake.ApplicationServices/Utilities/QueryGeneratorUtility.cs	2013-07-18 22:31:40 +0800
++++ HandBrake-0.9.9-zh_CN/win/CS/HandBrake.ApplicationServices/Utilities/QueryGeneratorUtility.cs	2013-07-24 07:15:22 +0800
+@@ -47,7 +47,7 @@
+         {
+             if (string.IsNullOrEmpty(task.Source))
+             {
+-                return "No source selected";
++                return "未选择源文件";
+             }
+ 
+             string query = string.Empty;
 @@ -931,7 +931,7 @@
                      query += string.Format(" --x264-tune=\"{0}\" ", tune);
                  }
